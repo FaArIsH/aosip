@@ -1,6 +1,13 @@
 #
 # system.prop for sakura
 #
+# ADB
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.debuggable=1 \
+persist.sys.usb.config=adb \
+ro.secure=0 \
+ro.adb.secure=0
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
 audio_para_version=QL1715-Audiopara-V03-20180302 \
@@ -65,7 +72,9 @@ camera.lowpower.record.enable=1 \
 media.camera.ts.monotonic=1 \
 persist.camera.CDS=off \
 persist.camera.video.CDS=off \
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
 persist.camera.dual.camera=0 \
+persist.camera.eis.enable=1 \
 persist.camera.gyro.disable=0 \
 persist.camera.isp.clock.optmz=0 \
 persist.camera.stats.test=5 \
@@ -259,4 +268,4 @@ ro.vendor.qti.sys.fw.use_trim_settings=true \
 sys.vendor.shutdown.waittime=500 \
 vendor.audio.dolby.ds2.enabled=false \
 vendor.audio.dolby.ds2.hardbypass=false \
-vendor.audio.offload.passthrough=false 
+vendor.audio.offload.passthrough=false
