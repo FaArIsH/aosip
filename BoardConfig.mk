@@ -16,7 +16,7 @@
 
 DEVICE_PATH := device/xiaomi/sakura
 
-TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
+# TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # Architecture
 TARGET_ARCH := arm64
